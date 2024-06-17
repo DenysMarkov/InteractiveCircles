@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Circles</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <div id="main">
+            <canvas id="canvas" width="800" height="600"></canvas>
+            <div id="info">
+                <p>Coordinates:</p>
+                <ul>
+                    <li>A: <span id="coordA"></span></li>
+                    <li>B: <span id="coordB"></span></li>
+                    <li>C: <span id="coordC"></span></li>
+                    <li>D: <span id="coordD"></span></li>
+                </ul>
+                <p>Intersections: <span id="intersections"></span></p>
+            </div>
+        </div>
+        <div id="controls">
+            <button id="reset">Reset</button>
+            <button id="about">About</button>
+        </div>
+        <!-- Hidden element for 'About' text -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="aboutText">
+                    <h4>Interactive Circles</h4>
+                    <p>Author: Denys Markov</p>
+                    <p>
+                        Instructions: Click to place 4 points and see intersecting circles.
+                        Coordinates of points and intersections are displayed in the info panel on the right.
+                        You can move the points freely to update the circles and intersections dynamically.
+                        Use the 'Reset' button to clear the canvas and start over.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
